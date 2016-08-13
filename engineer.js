@@ -50,3 +50,17 @@ function checkActivations(){
 		}
 	}
 }
+
+$('#surface').click(function(){
+	alert('Captain, Please announce your sector');
+	for(var i = 0; i<4; i++){
+		var alfa = prompt("Each person must type in the alphabet(if you mess up, your whole team has to start over):", 4 - i + " more times");	
+		if(alfa !== "abcdefghijklmnopqrstuvwxyz"){
+			i = -1;
+		}
+	}
+	alert('DIVE DIVE DIVE!!! Breakdowns Reset, Captain may erase route!')
+	$('.tint').each(function(){
+		$(this).removeClass('tint');
+	});
+});
