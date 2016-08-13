@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+  	div {
+  		background-color: lightgrey;
+  		/*border: 5px solid black;*/
+  		/*margin: 5px;*/
+  		text-align: center
+  	/*	display: flex;
+  		flex-direction: column;
+  		align-items: center;*/
+  	}
+  	div.eastwest {
+  		display: flex;
+  		justify-content: center;	
+  	}
+  	div.east {
+  		margin-left: 30px;
+  	}
+  	div.west {
+  		margin-right: 30px;
+  	}
+  	.icons {
+  	  width: 40px;
+  	  height: 40px;
+   }
+   .circle {
+      width: 75px;
+      height: 75px;
+      -webkit-border-radius: 999px;
+      -moz-border-radius: 999px;
+      border-radius: 999px;
+      border: 10px solid black;
+    }
+    .tint { 
+      opacity: .3; 
+      /*-webkit-filter: grayscale(100%) sepia(100%); */
+    }
+    .purple-circuit {
+    	border-color: purple;
+    }
+    .orange-circuit {
+    	border-color: orange;
+    }
+    .blue-circuit {
+    	border-color: blue;
+    }
+    .transparent-circuit {
+    	border-color: transparent;
+    }
+    .hidden {
+    	display: none;
+    }
+    h1 {
+    	margin: 0;
+    	padding: 5px;
+    }
+  </style>
+  <title>Captain Sonar - Engineer</title>
+  <meta name="description" content="Captain Sonar - Engineer">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <div class="north"><h1>North</h1>
+  	<div>
+  		<img class="icons circle orange-circuit" src="assets/button-finger.svg">
+  		<img class="icons circle orange-circuit" src="assets/submarine.svg">
+  		<img class="icons circle orange-circuit" src="assets/submarine.svg">
+  	</div>
+  	<div>
+  		<img class="icons circle transparent-circuit" src="assets/radar-sweep.svg">
+  		<img class="icons circle transparent-circuit" src="assets/button-finger.svg">
+  		<img class="icons circle transparent-circuit" src="assets/nuclear.svg">
+  	</div>
+
+ 
+  </div>
+  <div class="eastwest">
+  	<div class="west"><h1>West</h1>
+  		<div>
+  			<img class="icons circle purple-circuit" src="assets/button-finger.svg">
+  			<img class="icons circle purple-circuit" src="assets/submarine.svg">
+  			<img class="icons circle purple-circuit" src="assets/radar-sweep.svg">
+  		</div>
+  		<div>
+  			<img class="icons circle transparent-circuit" src="assets/radar-sweep.svg">
+  			<img class="icons circle transparent-circuit" src="assets/nuclear.svg">
+  			<img class="icons circle transparent-circuit" src="assets/nuclear.svg">
+  		</div>
+  	</div>
+  	<div class="east"><h1>East</h1>
+  		<div>
+  			<img class="icons circle purple-circuit" src="assets/button-finger.svg">
+  			<img class="icons circle blue-circuit" src="assets/submarine.svg">
+  			<img class="icons circle orange-circuit" src="assets/radar-sweep.svg">
+  		</div>
+  		<div>
+  			<img class="icons circle transparent-circuit" src="assets/radar-sweep.svg">
+  			<img class="icons circle transparent-circuit" src="assets/nuclear.svg">
+  			<img class="icons circle transparent-circuit" src="assets/nuclear.svg">
+  		</div>
+  	</div>
+  </div>
+  <div class="south"><h1>South</h1>
+  	<div>
+  		<img class="icons circle blue-circuit" src="assets/button-finger.svg">
+  		<img class="icons circle blue-circuit" src="assets/submarine.svg">
+  		<img class="icons circle blue-circuit" src="assets/radar-sweep.svg">  
+  	</div>
+  	<div>
+  		<img class="icons circle transparent-circuit" src="assets/submarine.svg">
+  		<img class="icons circle transparent-circuit" src="assets/button-finger.svg">
+  		<img class="icons circle transparent-circuit" src="assets/nuclear.svg">
+  	</div>
+  </div>
+  <p class='weapons hidden'>Your team MAY NOT activate weapons.</p>
+  <p class='radar hidden'>Your team MAY NOT activate sonar or drones.</p>
+  <p class="stealth hidden">Your team MAY NOT activate steath.</p>
+  
+</head>
+
+<body>
+  <script src="jquery-3.1.0.min.js"></script>
+  <script src="engineer.js"></script>
+</body>
+</html>
